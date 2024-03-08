@@ -12,10 +12,10 @@ public class ProductResponseListDTO {
     private long totalCount;
     private int pageIndex;
     private int pageSize;
-    private List<ProductResponseDTO> productList;
+    private List<ProductResponseDTO> dataList;
 
     public ProductResponseListDTO() {
-        productList = new ArrayList<>();
+        dataList = new ArrayList<>();
     }
 
 }

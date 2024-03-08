@@ -18,6 +18,8 @@ public class ProductResponseDTO {
     private String brandName;
     private String imageUrl;
 
+
+
     public void populateDto(Product product) {
 
         this.productId = product.getProductId();

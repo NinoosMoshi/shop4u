@@ -73,12 +73,12 @@ public class ProductServiceImpl implements ProductService{
                 prldto.setTotalPages(pages.getTotalPages());
                 prldto.setTotalCount(pages.getTotalElements());
                 prldto.setPageIndex(pages.getNumber());
-                prldto.setProductList(new ArrayList<ProductResponseDTO>());
+                prldto.setDataList(new ArrayList<ProductResponseDTO>());
                 for(Product product: productList) {
 
                     ProductResponseDTO prdto= new ProductResponseDTO();
                     prdto.populateDto(product);
-                    prldto.getProductList().add(prdto);
+                    prldto.getDataList().add(prdto);
                 }
                 return prldto;
             }
