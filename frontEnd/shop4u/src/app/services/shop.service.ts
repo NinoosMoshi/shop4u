@@ -13,7 +13,8 @@ export class ShopService {
 
   // http://localhost:8080/api/shop/products?pageSize=10
   getProducts() {
-    return this.http.get<IPagination<IProduct[]>>(environment.apiUrl +'shop/products?pageSize=10');
+    // return this.http.get<IPagination<IProduct[]>>(environment.apiUrl +'shop/products?pageSize=10');
+    return this.http.get<IPagination<IProduct[]>>(environment.apiUrl +'shop/products');
   }
 
 
