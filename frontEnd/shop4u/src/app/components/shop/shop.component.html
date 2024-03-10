@@ -12,6 +12,12 @@
               </option>
           </select> -->
 
+          <select class="form-select mb-4" >
+              <option>
+                sort name
+              </option>
+          </select>
+
 
           <h5 class="text-warning ms-3">Brands</h5>
           <ul class="list-group my-3">
@@ -21,6 +27,9 @@
                   (click)="onBrandSelected(brand.brandId)">
                   {{brand.brandName}}
               </li> -->
+              <li class="list-group-item" *ngFor="let brand of brands">
+                  {{brand.brandName}}
+              </li>
           </ul>
           <h5 class="text-warning ms-3">Categories</h5>
           <ul class="list-group my-3">
@@ -30,6 +39,9 @@
                   (click)="onCategorySelected(category.categoryId)">
                   {{category.categoryName}}
               </li> -->
+               <li class="list-group-item" *ngFor="let category of categories">
+                  {{category.categoryName}}
+              </li>
           </ul>
 
       </section>
