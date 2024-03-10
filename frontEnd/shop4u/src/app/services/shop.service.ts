@@ -34,7 +34,6 @@ export class ShopService {
 
       map(response => {
          this.pagination= response;
-         console.log(response);
           return response;
 
       })
